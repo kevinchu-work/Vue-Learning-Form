@@ -31,14 +31,15 @@ ENV NODE_ENV development
 # RUN yarn install
 # RUN yarn install --production --silent
 
-# Mount/Copy Project asset
-VOLUME /project
+# Mount local volume - sync asset
+# VOLUME /project
+# RUN yarn install
+
+# Isolated
 WORKDIR /project
-# RUN yarn global add @vue/cli @vue/cli-service serve
-# RUN yarn global add @vue/cli serve
-COPY "package.json" .
+# COPY "package.json" .
+COPY . .
 RUN yarn install
-# COPY . .
 
 # Starting
 EXPOSE 3000
