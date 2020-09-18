@@ -1,24 +1,20 @@
 # sfc
 
-## Project setup
-```
-yarn install
+## Start the Project
+#### by Docker
+
+```bash
+$ yarn docker
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Wait for the setup, it take awhile!
 
-### Compiles and minifies for production
-```
-yarn build
-```
+#### via VSCode
 
-### Lints and fixes files
-```
-yarn lint
-```
+1. Make sure VSCode already installed Docker plugins
+   please refer to [VSCode - Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
+2. Start Docker by following the above steps
+3. Choice 'node.js' image and select version 14
+4. Open http://127.0.0.1:3000
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-- EOF --

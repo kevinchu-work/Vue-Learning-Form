@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "docker": "docker build -t vuedocker . && docker run -it --rm -d -v $(pwd):/project -p 3000:3000 vuedocker /bin/bash",
+    "docker": "docker build -t vuedocker . && docker run -it --rm -d -v $(pwd):/project -p 3000:3000 --name vuedocker vuedocker bash && docker exec vuedocker yarn install && docker exec vuedocker yarn serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"

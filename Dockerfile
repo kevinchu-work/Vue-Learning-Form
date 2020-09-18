@@ -32,14 +32,13 @@ ENV NODE_ENV development
 # RUN yarn install --production --silent
 
 # Mount local volume - sync asset
-# VOLUME /project
-# RUN yarn install
+VOLUME /project
 
 # Isolated
 WORKDIR /project
 # COPY "package.json" .
-COPY . .
-RUN yarn install
+# COPY . .
+# RUN yarn install
 
 # Starting
 EXPOSE 3000
