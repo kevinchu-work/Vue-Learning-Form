@@ -21,4 +21,4 @@
 FROM node
 ENV NODE_ENV development
 
-WORKDIR /workspaces/sfc-docker
+WORKDIR /workspaces/sfc
