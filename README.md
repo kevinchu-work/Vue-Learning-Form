@@ -1,6 +1,7 @@
 # Learning: sfc - Vue Single File Components
 ## with Docker development environment (VSCode or standard Docker environment)
 
+ 
 ## How to run
 ### by Docker
 
@@ -10,7 +11,8 @@ $ yarn docker
 
 Wait for the setup, it take awhile!
 
-### via VSCode
+
+### by VSCode
 
 Requirement: VSCode Docker plugins
 please refer to [VSCode - Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
@@ -27,6 +29,8 @@ please refer to [VSCode - Developing inside a Container](https://code.visualstud
 
 
 ## Notes to Developer
-[Sep 21 2020] Docker image can be Node:14 or Microsoft Node 14-buster image, replacing the image can be found from /.devcontainer/Dockerfile line 4-5
+Date | Note
+---- | ----
+Sep 21 2020 | Docker image can be Node:14 or Microsoft Node 14-buster image, replacing the image can be found from /.devcontainer/Dockerfile line 4-5
 
 -- EOF --
