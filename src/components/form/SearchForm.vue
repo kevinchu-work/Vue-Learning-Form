@@ -25,7 +25,6 @@ import Button from './Button'
 import { v4 as uuidv4 } from 'uuid';
 
 export default {
-  name: 'SearchForm',
   props: {
     formID: { type: String, required: false, default: uuidv4() }
   },

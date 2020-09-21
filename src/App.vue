@@ -7,11 +7,10 @@
 </template>
 
 <script>
-import SearchForm from './components/form/SearchForm'
+import SearchForm  from './components/form/SearchForm'
 import ReportChart from './components/reports/ReportChart'
 
 export default {
-  name: 'App',
   components: {
     SearchForm,
     ReportChart

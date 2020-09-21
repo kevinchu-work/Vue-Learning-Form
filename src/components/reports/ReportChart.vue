@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="chartWrapper">
     <VueApexCharts type="bar" height="350" :options="chartOptions" :series="series"></VueApexCharts>
   </div>
 </template>
@@ -8,7 +8,6 @@
 import VueApexCharts from 'vue-apexcharts'
 
 export default {
-  name: 'ReportChart',
   components: {
     VueApexCharts,
   },
@@ -69,3 +68,13 @@ export default {
   },
 }
 </script>
+
+
+<style lang="scss" scoped>
+.chartWrapper {
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+}
+</style>
