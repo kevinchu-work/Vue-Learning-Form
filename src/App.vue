@@ -2,16 +2,19 @@
   <div id="app">
     <!-- <InputBox txtLbl="Name" modelID="name"></InputBox> -->
     <SearchForm />
+    <ReportChart />
   </div>
 </template>
 
 <script>
 import SearchForm from './components/form/SearchForm'
+import ReportChart from './components/reports/ReportChart'
 
 export default {
   name: 'App',
   components: {
-    SearchForm
+    SearchForm,
+    ReportChart
   }
 }
 </script>
