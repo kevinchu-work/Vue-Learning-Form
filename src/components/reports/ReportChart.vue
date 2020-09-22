@@ -8,6 +8,7 @@
 import VueApexCharts from 'vue-apexcharts'
 
 export default {
+  name: "ReportChart",
   components: {
     VueApexCharts,
   },
@@ -32,19 +33,20 @@ export default {
         chart: {
           type: 'bar',
           height: 350,
+          background: '#f9f9f9',
           stacked: true,
-          toolbar: { show: true },
-          zoom: { enabled: true }
+          toolbar: { show: false },
+          zoom: { enabled: true },
         },
         responsive: [{
           breakpoint: 480,
-          options: {
-            legend: {
-              position: 'bottom',
-              offsetX: -10,
-              offsetY: 0
-            }
-          }
+          // options: {
+            // legend: {
+            //   position: 'bottom',
+            //   offsetX: -10,
+            //   offsetY: 0
+            // }
+          // }
         }],
         plotOptions: {
           bar: {
@@ -56,12 +58,14 @@ export default {
           categories: [ 'Week 11', 'Week 12', 'Week 13', 'Week 14', 'Week 15', 'Week 16' ],
         },
         legend: {
-          position: 'right',
-          offsetY: 40
+          // position: 'bottom',
+          // offsetY: 40
+          offsetX: -50,
+          offsetY: 0
         },
-        fill: {
-          opacity: 1
-        }
+        // fill: {
+        //   opacity: 1
+        // }
       },
 
     }
@@ -73,8 +77,10 @@ export default {
 <style lang="scss" scoped>
 .chartWrapper {
   margin-top: 25px;
-  padding: 10px 15px;
+  padding: 5px 10px;
   background-color: #f7f7f7;
   border-radius: 6px;
+
+  box-shadow: 3px 3px 2px rgba(0,0,0, 0.2);
 }
 </style>
